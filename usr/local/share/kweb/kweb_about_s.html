@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<title>kweb :settings</title>
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<link rel="stylesheet" type="text/css" href="file:///usr/local/share/kweb/about.css">
+</head><body>
+<table widht="100%"><tr><td>
+<h2>kwebhelper and omxplayerGUI settings</h2></td><td>
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="gksettings">
+<input name="cmd" value="formdata" type="hidden">
+<input name="gsudo" value="gksudo" type="hidden">
+<input name="quotedset" value="kweb -ISAHMU0+-zbhrqfpok file:///usr/local/share/kweb/kweb_about_s.html" type="hidden">
+<input value="Edit as root" type="submit"></form></td></tr></table>
+<hr>
+<b>Available Presets: </b> 
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20alsa"><button>alsa</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20analogaudio"><button>analogaudio</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20audio"><button>audio</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20default"><button>default</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20full"><button>full</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20guenni"><button>guenni</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20myplayer"><button>myplayer</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20myremote"><button>myremote</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20nogui"><button>nogui</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20overlay"><button>overlay</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20overlay2"><button>overlay2</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20passthrough"><button>passthrough</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20remoteplayer"><button>remoteplayer</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20trueaspect"><button>trueaspect</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20vtest"><button>vtest</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20webplayer"><button>webplayer</button></a>
+<hr>
+Your current settings are shown below and you can modify every single one of them.<br>
+All changes take effect immediately. Check the manual for a detailed explanation of all options.<br><br>
+if empty, a folder 'Downloads' in the user's home dir will be taken (and created, if it doesn't exist).<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="dldirform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="dldir" type="hidden">
+<b>dldir:</b> <input name="quotedvardldir" type="text" size="25" value=""> <input value="save" type="submit"></form><hr><br><big><b>PDF OPTIONS (kwebhelper)</b></big><br>
+Preferred pdf reader: either evince, xpdf or mupdf. If left empty, the program will try to find the best PDF reader<br>
+Selecting an installed program of your choice will speed it up a bit<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="pdfprogform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="pdfprog" type="hidden">
+<b>pdfprog:</b> <input name="quotedvarpdfprog" type="text" size="25" value=""> <input value="save" type="submit"></form><hr>Additional options for pdf program (must match the selected program!):<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="pdfoptionsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="pdfoptions" type="hidden">
+<b>pdfoptions:</b> Enter one element per line!<br><textarea name="quotedpdfoptions" cols="25" rows="3"></textarea> <input value="save" type="submit"></form><hr>This will allow kweb to open pdf files on a local server as files instead of downloading them first;<br>
+will only work with "http://localhost" links<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="pdfpathreplacementsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="pdfpathreplacements" type="hidden">
+<b>pdfpathreplacements:</b> Enter one element per line in the form value1=value2<br><textarea name="quotedpdfpathreplacements" cols="60" rows="3"></textarea> <input value="save" type="submit"></form><hr><br><big><b>DOWNLOAD OPTIONS (kwebhelper)</b></big><br>
+Defines if wget will run in a terminal (visual control) or in the background:<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="show_download_in_terminalform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="show_download_in_terminal" type="hidden">
+<b>show_download_in_terminal:</b> <input type="radio" name="varshow_download_in_terminal" value="True" checked>True <input type="radio" name="varshow_download_in_terminal" value="False">False <input value="save" type="submit"></form><hr>Options for wget:<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="wget_optionsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="wget_options" type="hidden">
+<b>wget_options:</b> Enter one element per line!<br><textarea name="quotedwget_options" cols="26" rows="5">--no-check-certificate
+--no-clobber
+--adjust-extension
+--content-disposition</textarea> <input value="save" type="submit"></form><hr>Options for download manager uget:<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="uget_optionsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="uget_options" type="hidden">
+<b>uget_options:</b> Enter one element per line!<br><textarea name="quoteduget_options" cols="11" rows="2">--quiet</textarea> <input value="save" type="submit"></form><hr><br><big><b>COMMAND EXECUTION OPTIONS (kwebhelper)</b></big><br>
+If this is set to "True", all Desktop (GUI) programs will be executed without starting a terminal first<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="check_desktopform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="check_desktop" type="hidden">
+<b>check_desktop:</b> <input type="radio" name="varcheck_desktop" value="True" checked>True <input type="radio" name="varcheck_desktop" value="False">False <input value="save" type="submit"></form><hr>Direct commands will be executed without starting a terminal first.<br>
+Use it for background commands or programs with a GUI that are not desktop programs or if check_desktop is set to "False"<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="direct_commandsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="direct_commands" type="hidden">
+<b>direct_commands:</b> Enter one element per line!<br><textarea name="quoteddirect_commands" cols="26" rows="9">kwebhelper.py
+omxplayergui
+kwebhelper_set.py
+omxplayer
+gksudo
+xterm
+screen
+bgstart_ytdl_server.sh</textarea> <input value="save" type="submit"></form><hr>Preferred terminal to run commands in, must be set ('xterm' or 'lxterminal')<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="preferred_terminalform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="preferred_terminal" type="hidden">
+<b>preferred_terminal:</b> <input name="quotedvarpreferred_terminal" type="text" size="14" value="lxterminal"> <input value="save" type="submit"></form><hr>Set the following to False if you don't want to run 'sudo' commands inside a terminal,<br>
+but only if a password is not required (you may break command execution otherwise):<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="sudo_requires_passwordform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="sudo_requires_password" type="hidden">
+<b>sudo_requires_password:</b> <input type="radio" name="varsudo_requires_password" value="True" checked>True <input type="radio" name="varsudo_requires_password" value="False">False <input value="save" type="submit"></form><hr>set the following to "True", if you want to run all commands from a script file.<br>
+It may help with complex command links, but will require more disk accesses.<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="run_as_scriptform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="run_as_script" type="hidden">
+<b>run_as_script:</b> <input type="radio" name="varrun_as_script" value="True">True <input type="radio" name="varrun_as_script" value="False" checked>False <input value="save" type="submit"></form><hr><br><a name="1"></a><big><b>GENERAL OMXPLAYER AUDIO VIDEO OPTIONS</b></big><br>
+Options for omxplayer to be used when playing video<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="omxoptionsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="omxoptions" type="hidden">
+<b>omxoptions:</b> Enter one element per line!<br><textarea name="quotedomxoptions" cols="25" rows="3"></textarea> <input value="save" type="submit"></form><hr>Options for omxplayer to be used when playing audio<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="omxaudiooptionsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="omxaudiooptions" type="hidden">
+<b>omxaudiooptions:</b> Enter one element per line!<br><textarea name="quotedomxaudiooptions" cols="25" rows="3"></textarea> <input value="save" type="submit"></form><hr>Special options for watching live tv streams (omxplayer)<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="omx_livetv_optionsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="omx_livetv_options" type="hidden">
+<b>omx_livetv_options:</b> Enter one element per line!<br><textarea name="quotedomx_livetv_options" cols="10" rows="2">--live</textarea> <input value="save" type="submit"></form><hr>Add the start of your live tv stream links to this list to enable live tv options<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="live_tvform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="live_tv" type="hidden">
+<b>live_tv:</b> Enter one element per line!<br><textarea name="quotedlive_tv" cols="25" rows="3"></textarea> <input value="save" type="submit"></form><hr>Mimetypes: if given, this will restrict what omxplayer will be given to play.<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="mimetypesform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="mimetypes" type="hidden">
+<b>mimetypes:</b> Enter one element per line!<br><textarea name="quotedmimetypes" cols="25" rows="3"></textarea> <input value="save" type="submit"></form><hr>If omxplayerGUI is not used omxplayer is started from a terminal (xterm) to clear the screen and get full keyboard control.<br>
+Set the following to "False" to use omxplayer for video without starting a terminal first (if omxplayerGUI is not used)<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="omxplayer_in_terminal_for_videoform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="omxplayer_in_terminal_for_video" type="hidden">
+<b>omxplayer_in_terminal_for_video:</b> <input type="radio" name="varomxplayer_in_terminal_for_video" value="True" checked>True <input type="radio" name="varomxplayer_in_terminal_for_video" value="False">False <input value="save" type="submit"></form><hr>Set the following to "False" to use omxplayer for audio without starting a terminal first (if omxaudioplayer is not used)<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="omxplayer_in_terminal_for_audioform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="omxplayer_in_terminal_for_audio" type="hidden">
+<b>omxplayer_in_terminal_for_audio:</b> <input type="radio" name="varomxplayer_in_terminal_for_audio" value="True" checked>True <input type="radio" name="varomxplayer_in_terminal_for_audio" value="False">False <input value="save" type="submit"></form><hr>The following list will be used, to detect audio files, especially in m3u playlists<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="audioextensionsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="audioextensions" type="hidden">
+<b>audioextensions:</b> Enter one element per line!<br><textarea name="quotedaudioextensions" cols="8" rows="11">mp3
+aac
+flac
+wav
+wma
+cda
+ogg
+ogm
+ac3
+ape</textarea> <input value="save" type="submit"></form><hr>How unknown streams should be handled, must be either 'video' or 'audio'<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="streammodeform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="streammode" type="hidden">
+<b>streammode:</b> <input name="quotedvarstreammode" type="text" size="9" value="video"> <input value="save" type="submit"></form><hr>If streammode is set to "video", the following list will be used for checking for video files<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="videoextensionsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="videoextensions" type="hidden">
+<b>videoextensions:</b> Enter one element per line!<br><textarea name="quotedvideoextensions" cols="8" rows="21">asf
+avi
+mpg
+mp4
+mpeg
+m2v
+m1v
+vob
+divx
+xvid
+mov
+m4v
+m2p
+mkv
+m2ts
+ts
+mts
+wmv
+webm
+flv</textarea> <input value="save" type="submit"></form><hr>If the following is set to "True" VLC will be used to play audio files and playlists (audio only)<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="useVLCform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="useVLC" type="hidden">
+<b>useVLC:</b> <input type="radio" name="varuseVLC" value="True">True <input type="radio" name="varuseVLC" value="False" checked>False <input value="save" type="submit"></form><hr><br><big><b>omxplayerGUI AUDIO & VIDEO OPTIONS</b></big><br>
+Play audio files or playlists that contain only audio files in omxaudioplayer<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="useAudioplayerform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="useAudioplayer" type="hidden">
+<b>useAudioplayer:</b> <input type="radio" name="varuseAudioplayer" value="True" checked>True <input type="radio" name="varuseAudioplayer" value="False">False <input value="save" type="submit"></form><hr>Use GUI for playing videos<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="useVideoplayerform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="useVideoplayer" type="hidden">
+<b>useVideoplayer:</b> <input type="radio" name="varuseVideoplayer" value="True" checked>True <input type="radio" name="varuseVideoplayer" value="False">False <input value="save" type="submit"></form><hr>Volume setting when starting omxplayerGUI ranging from -20 to 4 ( -60 to +12 db)<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="defaultaudiovolumeform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="defaultaudiovolume" type="hidden">
+<b>defaultaudiovolume:</b> <input name="vardefaultaudiovolume" type="text" size="4" value="0"> <input value="save" type="submit"></form><hr>Start playing the first (or only) file automatically<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="autoplayform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="autoplay" type="hidden">
+<b>autoplay:</b> <input type="radio" name="varautoplay" value="True" checked>True <input type="radio" name="varautoplay" value="False">False <input value="save" type="submit"></form><hr>Close the GUI if the last (or only) file has been played to the end<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="autofinishform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="autofinish" type="hidden">
+<b>autofinish:</b> <input type="radio" name="varautofinish" value="True" checked>True <input type="radio" name="varautofinish" value="False">False <input value="save" type="submit"></form><hr>Interface settings for omxaudioplayer and omxplayerGUI (video)<br>
+The font to be used for playlist and buttons<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="fontnameform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="fontname" type="hidden">
+<b>fontname:</b> <input name="quotedvarfontname" type="text" size="12" value="FreeSans"> <input value="save" type="submit"></form><hr>Font size between 10 and 22, will also determine the size of the GUI window:<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="fontheightform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="fontheight" type="hidden">
+<b>fontheight:</b> <input name="varfontheight" type="text" size="4" value="12"> <input value="save" type="submit"></form><hr>Number of entries displayed in playlist window, between 5 and 25:<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="maxlinesform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="maxlines" type="hidden">
+<b>maxlines:</b> <input name="varmaxlines" type="text" size="4" value="8"> <input value="save" type="submit"></form><hr>Width of the window, value between 40 and 80, defines the minimum number of characters of the song name  displayed in the songlist (usually much more are shown!), not used for video mode<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="lwidthform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="lwidth" type="hidden">
+<b>lwidth:</b> <input name="varlwidth" type="text" size="4" value="40"> <input value="save" type="submit"></form><hr>Minimal height of video area (also depends on fontheight!), 288 or more:<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="videoheightform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="videoheight" type="hidden">
+<b>videoheight:</b> <input name="varvideoheight" type="text" size="4" value="288"> <input value="save" type="submit"></form><hr>Default 'Lines:' mode, must be one of those: 'min','max', 'full'<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="screenmodeform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="screenmode" type="hidden">
+<b>screenmode:</b> <input name="quotedvarscreenmode" type="text" size="7" value="max"> <input value="save" type="submit"></form><hr>Default video mode: set this to 'full' or 'refresh' for full screen,<br>
+to 'auto' (for automatic detection of the aspect ration) or to one of those:<br>
+'4:3','16:9','16:10','2.21:1','2.35:1','2.39:1' to play in a window<br>
+(you can also add one additional value here):<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="videomodeform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="videomode" type="hidden">
+<b>videomode:</b> <input name="quotedvarvideomode" type="text" size="8" value="auto"> <input value="save" type="submit"></form><hr>Set the following to "True" for simple mode (no window resizing, moving etc. while playing video);<br>
+must be set to "True" for older omxplayer versions<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="freeze_windowform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="freeze_window" type="hidden">
+<b>freeze_window:</b> <input type="radio" name="varfreeze_window" value="True">True <input type="radio" name="varfreeze_window" value="False" checked>False <input value="save" type="submit"></form><hr>If True, get video information using a second omxplayer process instead of using dbus<br>
+Starting the player in auto mode may be slower.<br>
+Not recommended on a single core Raspberry Pi.<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="get_DARform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="get_DAR" type="hidden">
+<b>get_DAR:</b> <input type="radio" name="varget_DAR" value="True">True <input type="radio" name="varget_DAR" value="False" checked>False <input value="save" type="submit"></form><hr>If the following is set to "True", all control elements are hidden (can be enabled later on with ALT+h)<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="hide_controlsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="hide_controls" type="hidden">
+<b>hide_controls:</b> <input type="radio" name="varhide_controls" value="True">True <input type="radio" name="varhide_controls" value="False" checked>False <input value="save" type="submit"></form><hr><br><big><b>ONLINE VIDEO OPTIONS</b></big><br>
+Options for pages containing video, either HTML5 video tags or all websites supported by youtube-dl.<br>
+If html5 video tags include more than one source format, select the preferred one here.<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="preferred_html5_video_formatform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="preferred_html5_video_format" type="hidden">
+<b>preferred_html5_video_format:</b> <input name="quotedvarpreferred_html5_video_format" type="text" size="8" value=".mp4"> <input value="save" type="submit"></form><hr>Choose whether HTML5 URL extraction is tried first and youtube-dl extraction afterwards or vice versa.<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="html5_firstform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="html5_first" type="hidden">
+<b>html5_first:</b> <input type="radio" name="varhtml5_first" value="True">True <input type="radio" name="varhtml5_first" value="False" checked>False <input value="save" type="submit"></form><hr>Additional youtube-dl options, e. g. selecting a resolution or file format<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="youtube_dl_optionsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="youtube_dl_options" type="hidden">
+<b>youtube_dl_options:</b> Enter one element per line!<br><textarea name="quotedyoutube_dl_options" cols="8" rows="3">-f
+best</textarea> <input value="save" type="submit"></form><hr>Special omxplayer options for web video<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="youtube_omxoptionsform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="youtube_omxoptions" type="hidden">
+<b>youtube_omxoptions:</b> Enter one element per line!<br><textarea name="quotedyoutube_omxoptions" cols="25" rows="3"></textarea> <input value="save" type="submit"></form><hr>Use youtube-dl-server, if possible; also required for autostart from the frontend<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="use_ytdl_serverform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="use_ytdl_server" type="hidden">
+<b>use_ytdl_server:</b> <input type="radio" name="varuse_ytdl_server" value="True" checked>True <input type="radio" name="varuse_ytdl_server" value="False">False <input value="save" type="submit"></form><hr>Port on which youtube-dl-server is running.<br>
+You should only change this, if the port is used by another application.<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="ytdl_server_portform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="ytdl_server_port" type="hidden">
+<b>ytdl_server_port:</b> <input name="quotedvarytdl_server_port" type="text" size="8" value="9192"> <input value="save" type="submit"></form><hr>Host name or IP of youtube-dl-server.<br>
+Only change this, if you want to use one server for many clients.<br>
+If not 'localhost', this will also prevent autostart from the frontend<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="ytdl_server_hostform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="ytdl_server_host" type="hidden">
+<b>ytdl_server_host:</b> <input name="quotedvarytdl_server_host" type="text" size="13" value="localhost"> <input value="save" type="submit"></form><hr>Format string to be used by youtube-dl-server. In case of missing audio, you might change this to:<br>
+best[protocol!=?m3u8][protocol!=?m3u8_native]<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="ytdl_server_formatform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="ytdl_server_format" type="hidden">
+<b>ytdl_server_format:</b> <input name="quotedvarytdl_server_format" type="text" size="8" value="best"> <input value="save" type="submit"></form><hr>The youtube-dl-server can also be used as web interface for local media with the following options<br>
+Enter as many "name=path" entries like "Video=/home/pi/video" into the follwong area<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="player_directoriesform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="player_directories" type="hidden">
+<b>player_directories:</b> Enter one element per line in the form value1=value2<br><textarea name="quotedplayer_directories" cols="60" rows="3"></textarea> <input value="save" type="submit"></form><hr>The web player interface can be styled using CSS files. Enter the name of a CSS file like 'player1.css'<br>
+The CSS file must be placed in /usr/local/share/kweb<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="player_cssform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="player_css" type="hidden">
+<b>player_css:</b> <input name="quotedvarplayer_css" type="text" size="25" value=""> <input value="save" type="submit"></form><hr>To enable the remote control interface set the following to 'True'<br>
+This only works in overlay mode (check the manual for details).<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="enable_remoteform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="enable_remote" type="hidden">
+<b>enable_remote:</b> <input type="radio" name="varenable_remote" value="True">True <input type="radio" name="varenable_remote" value="False" checked>False <input value="save" type="submit"></form><hr><br><big><b>Overscan compensation</b></big><br>
+If you cannot avoid using overscan settings (not recommended), the video area may become displaced.<br>
+You can use the following settings for compensation. Check your config.txt for the right values.<br>
+Positive values will move the video area to the right side, negative values to the left<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="x_offsetform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="x_offset" type="hidden">
+<b>x_offset:</b> <input name="varx_offset" type="text" size="4" value="0"> <input value="save" type="submit"></form><hr>Positive values will move the video area downwards, negative values upwards<br>
+
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="y_offsetform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set" value="kwebhelper_set.py" type="hidden">
+<input name="name" value="y_offset" type="hidden">
+<b>y_offset:</b> <input name="vary_offset" type="text" size="4" value="0"> <input value="save" type="submit"></form><hr><big><b>Save and Load Presets</b></big><br>
+You may save the currents settings as a named preset and load them again later on.<br>
+After loading a preset, you should reload this page.<br>
+<table><tr><td>
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="presetform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set1" value="kwebhelper_set.py" type="hidden">
+<input name="proc" value="savepreset" type="hidden">
+<input value="Save Preset" type="submit"> Name: <input name="quoteds" type="text" size="20" value="">
+</form><br>
+<form accept-charset="utf-8" enctype="application/x-www-form-urlencoded" method="get" action="file:///homepage.html" name="presetform">
+<input name="cmd" value="formdata" type="hidden">
+<input name="sudo" value="sudo" type="hidden">
+<input name="set2" value="kwebhelper_set.py" type="hidden">
+<input name="proc" value="deletepreset" type="hidden">
+<input value="Delete Preset" type="submit"> Name: <input name="quotedd" type="text" size="20" value="">
+</form></td><td><b>Load Preset:</b> 
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20alsa"><button>alsa</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20analogaudio"><button>analogaudio</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20audio"><button>audio</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20default"><button>default</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20full"><button>full</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20guenni"><button>guenni</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20myplayer"><button>myplayer</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20myremote"><button>myremote</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20nogui"><button>nogui</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20overlay"><button>overlay</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20overlay2"><button>overlay2</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20passthrough"><button>passthrough</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20remoteplayer"><button>remoteplayer</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20trueaspect"><button>trueaspect</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20vtest"><button>vtest</button></a>
+<a href="file:///homepage.html?cmd=sudo%20kwebhelper_set.py%20loadpreset%20webplayer"><button>webplayer</button></a></td></tr></table><hr></body></html>

@@ -1,0 +1,11 @@
+UNAME=$(grep 1000 /etc/passwd | cut -f1 -d:)
+cp /usr/local/share/kweb/ktop /home/$UNAME/ktop
+if [ -f /usr/local/bin/omxplayergui.py ]
+then
+rm /usr/local/bin/omxplayergui.py
+fi
+update-menus
+kwebhelper_set.py
+kwebhelper_set.py patchpresets
+kwebhelper_set.py silentomx
+su $UNAME -c "preparekweb"

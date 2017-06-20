@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Preparing kweb environment ..."
+if [ -f ~/.kweb.conf ]
+then
+rm ~/.kweb.conf
+fi
+if [ -f ~/kweb_about_c.html ]
+then
+rm ~/kweb_about_c.html
+fi
+kwebhelper.py cmd "#formdataintern&proc=update"
+echo
+kwebcheck.py
+echo
+ginstall-ytdl

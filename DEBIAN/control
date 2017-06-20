@@ -1,0 +1,12 @@
+Package: kweb
+Priority: extra
+Section: web
+Installed-Size: 4716
+Maintainer: Guenter Kreidl <gkreidl@krefelder-life.de>
+Architecture: armhf
+Version: 1.7.5-2
+Depends: libwebkitgtk-1.0-0,libwebkitgtk-3.0-0,x11-xserver-utils,git,python,libc6,menu,libmbim-glib4,libmm-glib0,libqmi-glib1,libjim0.75,geoclue-2.0,libmbim-proxy
+Provides: kweb,kweb3,omxplayergui
+Description: kweb suite (Minimal Kiosk Browser)
+ Minimal Kiosk Browser
+ A Lightweight Browser and Application Interface for the Raspberry PI
